@@ -4,11 +4,13 @@ from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup
 
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
+
+import plotly.express as px
 
 import warnings
 warnings.filterwarnings("ignore")
+
+st.set_page_config(page_title="DCI App", layout="wide")
 
 url = 'https://en.wikipedia.org/wiki/Drum_Corps_International_World_Class_Champions'
 
@@ -37,8 +39,7 @@ ties = [pd.Series([2000, '12 August', 'The Cavaliers', 97.650, 'College Park, Ma
        ]
 
 champions = champions.append(ties, ignore_index=True)
-
-st.set_page_config(page_title="DCI App", layout="wide")
+champions = champions.sort_values(by = 'Year')
 
 colT1,colT2 = st.columns([1,8])
 with colT2:
@@ -46,52 +47,65 @@ with colT2:
 
 st.dataframe(champions)
 
-fig, ax = plt.subplots(figsize=(15,10))
-ax = sns.countplot(y="Champion & Repertoire",
-                   data=champions,
-                   order=champions['Champion & Repertoire'].value_counts().index)
+st.text(" ")
+st.text(" ")
+st.text(" ")
+st.text(" ")
+st.text(" ")
 
-ax.set_title('Drum Corps International \nWorld Class Championship Titles 1972-2019*')
-ax.set_ylabel('Drum Corps')
-ax.set_xlabel('Championship Title Count', loc='left')
-ax.set_xticks(range(0, 21))
+fig1 = px.histogram(
+    data_frame=champions,
+    y='Champion & Repertoire',
+    color="Champion & Repertoire",
+    # https://plotly.com/python/discrete-color/
+    color_discrete_sequence=px.colors.qualitative.D3
 
-rects = ax.patches
+).update_layout(
+    title={
+        'text': 'Drum Corps International <br>World Class Championship Titles 1972-2019*',
+        'y': 0.97,
+        'x': 0.5,
+        'xanchor': 'center',
+        'yanchor': 'top'
+    },
+    xaxis_title='Championship Title Count',
+    yaxis_title='Drum Corps',
+    font=dict(
+        size = 18,
+        color='white'
+            ),
+    width=500,
+    height=1000,
+    showlegend=False,
+    margin=dict(
+        l=25,
+        r=25,
+        b=100,
+        t=100,
+        pad=4
+                )
+).update_yaxes(
+    categoryorder="total ascending"
+).update_traces(hovertemplate ='<i>Championships</i>: ' + '%{x}' + '<extra></extra>',
+                  selector=dict(type="histogram")
+).add_annotation(dict(font=dict(color='white',size=15),
+                                        x=0,
+                                        y=-0.12,
+                                        showarrow=False,
+                                        text="* Including Ties in 1996, 1999, & 2000",
+                                        textangle=0,
+                                        xanchor='left',
+                                        xref="paper",
+                                        yref="paper")
+).add_annotation(dict(font=dict(color='white',size=15),
+                                        x=0.6,
+                                        y=-0.13,
+                                        showarrow=False,
+                                        text="Data: https://en.wikipedia.org/wiki/Drum_Corps_International_World_Class_Champions<br>Graphic:@Danger009Mouse",
+                                        textangle=0,
+                                        xanchor='left',
+                                        xref="paper",
+                                        yref="paper")
+                 )
 
-# For each bar: Place a label
-for rect in rects:
-    # Get X and Y placement of label from rect.
-    x_value = rect.get_width()
-    y_value = rect.get_y() + rect.get_height() / 2
-
-    # Number of points between bar and label. Change to your liking.
-    space = 5
-    # Vertical alignment for positive values
-    ha = 'left'
-
-    # If value of bar is negative: Place label left of bar
-    if x_value < 0:
-        # Invert space to place label to the left
-        space *= -1
-        # Horizontally align label at right
-        ha = 'right'
-
-    # Use X value as label and format number with one decimal place
-    label = "{:.0f}".format(x_value)
-
-    # Create annotation
-    plt.annotate(
-        label,  # Use `label` as label
-        (x_value, y_value),  # Place label at end of the bar
-        xytext=(space, 0),  # Horizontally shift label by `space`
-        textcoords="offset points",  # Interpret `xytext` as offset in points
-        va='center',  # Vertically center label
-        ha=ha)  # Horizontally align label differently for
-    # positive and negative values.
-
-plt.figtext(.48, .005,
-            'Data: https://en.wikipedia.org/wiki/Drum_Corps_International_World_Class_Champions\nGraphic:@Danger009Mouse',
-            fontsize=12)
-plt.figtext(.08, .0003, '* Including Ties in 1996, 1999, & 2000', fontsize=12)
-
-st.pyplot(fig = fig)
+st.plotly_chart(fig1, use_container_width=True)
