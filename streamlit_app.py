@@ -12,7 +12,7 @@ warnings.filterwarnings("ignore")
 
 url = 'https://en.wikipedia.org/wiki/Drum_Corps_International_World_Class_Champions'
 
-uClient = uReq(url)  # opening up connection, grabbing the page
+uClient = uReq(url)
 page_html = uClient.read()
 uClient.close()
 page_soup = soup(page_html, "html.parser")
