@@ -1,25 +1,25 @@
-﻿drum_corps,primary_color
-The Academy,#CB2429
-Blue Devils,#003DA6
-Blue Knights,#0693E3
-Blue Stars,#59A8EE
-Bluecoats,#203265
-Boston Crusaders,#DA291C
-The Cadets,#811B30
-Carolina Crown,#632C4F
-The Cavaliers,#009445
-Colts,#CD3232
-Crossmen,#A4121F
-Genesis,#533A7B
-Jersey Surf,#004691
-Madison Scouts,#004B23
-Mandarins,#4B3963
-Music City,#E10600
-Pacific Crest,#208FA6
-Phantom Regiment,#CE0E2D
-Santa Clara Vanguard,#9E180B
-Seattle Cascades,#002C94
-Spirit of Atlanta,#8BB8E8
-Troopers,#1C4587
-Star of Indiana,#FF6699
-Anaheim Kingsmen,#6EA1EC
+﻿drum_corps,primary_color,url
+The Academy,#CB2429,https://backend.dci.org/images/gallery/N41/5a18117cd670bd001b2e638e_N41XtnNYfxJN3-1R6hEfHF5B49w7kAtX.png
+Blue Devils,#003DA6,https://backend.dci.org/images/gallery/8xO/5a181124d670bd001f490b07_8xOFgbZF3ijakryaqz0UGPXLp0-uTtnG.png
+Blue Knights,#0693E3,https://backend.dci.org/images/gallery/QtX/5a1b302fd670bd00c13da212_QtXzpIO58Ca5Fxh_TZp9Tt66z_qwM6RG.png
+Blue Stars,#59A8EE,https://backend.dci.org/images/gallery/O-J/5a181124d670bd001f490b0b_O-JgnhkTHqeBTb2CX2DmCYHHMzfR9WCa.png
+Bluecoats,#203265,https://production.assets.dci.org/61f832aee12c1b07ae0ee0e2_U4-72NITblZrzChQJr_T1VnKU93o9wrY.png
+Boston Crusaders,#DA291C,https://backend.dci.org/images/gallery/-rL/5a181124d670bd001f490b0d_-rL8mWx--vjTIXAXL829d5QRD8ANuyqN.png
+The Cadets,#811B30,https://backend.dci.org/images/gallery/CPL/5a18117cd670bd001b2e638f_CPLbiF7qGY7qDPDJHyNkKLsp52kOu6VS.png
+Carolina Crown,#632C4F,https://backend.dci.org/images/gallery/IYp/5a181124d670bd001f490b0e_IYp8h5YRwrMtsuZQeQt2J-8QJYcL3bzC.png
+The Cavaliers,#009445,https://assets.dci.org/5ef6c5f9694c8b6b7c436322_BG_EFfjuppP9PJoOcFk1zOl1tQoaFmCE.png
+Colts,#CD3232,https://backend.dci.org/images/gallery/kKA/5a181125d670bd001f490b12_kKAfWISGqTfPVu7Qvz-Q9xxUeupl2zpF.png
+Crossmen,#A4121F,https://production.assets.dci.org/615b4917ea709322086a7bd2_eENmRIowjmhHGaXyACwLB8HLbSFIp42q.png
+Genesis,#533A7B,https://backend.dci.org/images/gallery/vTp/5a181125d670bd001f490b16_vTp0iccgUqUXcPdxJBuDSSHGi-pVJbFB.png
+Jersey Surf,#004691,https://backend.dci.org/images/gallery/iB9/5a181168d670bd001b2e6375_iB9ukYZMk6SJ3HCTlvcVsI6nOmbEZ01p.png
+Madison Scouts,#004B23,https://backend.dci.org/images/gallery/XVf/5a181168d670bd001b2e637b_XVfT9k-W5gcOkuQ6X0dN90CVLLeqv2HY.png
+Mandarins,#4B3963,https://backend.dci.org/images/gallery/hsc/5a181168d670bd001b2e637c_hsc3QNRMPgTFcrZ7cGL5SZnfVa-ElLRW.png
+Music City,#E10600,https://production.assets.dci.org/60745db031aad24c2a28bf82_NX3k9OaDxEwg3iY32PA_0HopnnIN4zNi.png
+Pacific Crest,#208FA6,https://backend.dci.org/images/gallery/ig_/5a18117cd670bd001b2e6380_ig_O2i2w44kMY9sAdB33wfyR7FxaUwnq.png
+Phantom Regiment,#CE0E2D,https://backend.dci.org/images/gallery/50d/5a18117cd670bd001b2e6381_50d93nauVAU2BzMVEcWNODIgZ_bPAXfh.png
+Santa Clara Vanguard,#9E180B,https://backend.dci.org/images/gallery/MJH/5a18117cd670bd001b2e6387_MJHtTWe9hESYCjjk5gijQHS1BiA14M6Y.png
+Seattle Cascades,#002C94,https://backend.dci.org/images/gallery/MFw/5a1b8dd5d670bd00e57d77d3_MFwqPFZN3aYrbeo8VXZGcoaN3MHYTsy0.png
+Spirit of Atlanta,#8BB8E8,https://backend.dci.org/images/gallery/5OO/5a1ec12ad670bd0b8762d7e2_5OOkm7nHf6k-XY51V252qbPKzBW5XMdH.png
+Troopers,#1C4587,https://backend.dci.org/images/gallery/etU/5a1b309bd670bd00c4067d02_etUX30kIFc5-VGnvdY468qxRfQtgbuqe.png
+Star of Indiana,#FF6699,https://pbs.twimg.com/profile_images/1355156593122406404/wHK8W1-x_400x400.jpg
+Anaheim Kingsmen,#6EA1EC,https://pbs.twimg.com/profile_images/622922622817296385/XT-Sb8M0_400x400.jpg
