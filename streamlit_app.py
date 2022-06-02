@@ -44,6 +44,8 @@ champions = champions.rename(columns={'Champion & Repertoire': 'Drum Corps'})
 dci_colors = pd.read_csv('drum_corps_colors.csv')
 color_discrete_map = dict(dci_colors.items())
 
+st.write(color_discrete_map)
+
 st.set_page_config(page_title="DCI App", layout="wide")
 
 colT1, colT2 = st.columns([1, 8])
