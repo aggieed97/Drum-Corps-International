@@ -95,7 +95,6 @@ fig1 = px.histogram(
     yaxis_title='Drum Corps',
     font=dict(
         size=18,
-        color='white'
     ),
     width=500,
     height=1000,
