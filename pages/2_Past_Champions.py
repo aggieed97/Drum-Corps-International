@@ -1,11 +1,13 @@
 import streamlit as st
-from st_aggrid import AgGrid
 
 import pandas as pd
+import numpy as np
 import plotly.express as px
 
 champions = pd.read_csv('pages/DCI-World-Champions-1972-2019.csv')
 champions = champions.rename(columns={'Champion & Repertoire': 'Drum Corps'})
+champions = champions.sort_values(by='Year')
+champions.index = np.arange(1, len(champions) + 1)
 
 dci_colors = pd.read_csv('pages/drum_corps_colors.csv')
 color_discrete_map = dict(dci_colors.values)
@@ -72,4 +74,17 @@ st.text(" ")
 st.text(" ")
 st.text(" ")
 st.text(" ")
-AgGrid(champions)
+
+caption_text = 'Including Ties in 1996, 1999, & 2000'
+
+def highlight_cols(s, coldict):
+    return ['background-color: {}'.format(color_discrete_map[v]) if v else '' for v in
+            champions['Drum Corps'].isin(color_discrete_map.keys()) * champions['Drum Corps'].values]
+
+champion_df = champions.style.set_caption(caption_text).hide(axis='index') \
+    .apply(highlight_cols, coldict=color_discrete_map) \
+    .format({'Score':'{:.5}'}) \
+    .set_table_styles([dict(selector='th', props=[('text-align', 'center')])]) \
+    .set_table_styles([{'selector': 'th.col_heading', 'props': 'text-align: center;'}], overwrite = False)
+
+st.write(champion_df.to_html(index=False), unsafe_allow_html=True)
