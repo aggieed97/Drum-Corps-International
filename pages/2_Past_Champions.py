@@ -87,4 +87,5 @@ champion_df = champions.style.set_caption(caption_text).hide_index() \
     .set_table_styles([dict(selector='th', props=[('text-align', 'center')])]) \
     .set_table_styles([{'selector': 'th.col_heading', 'props': 'text-align: center;'}], overwrite = False)
 
-st.write(champion_df.to_html(index=False), unsafe_allow_html=True)
+#st.write(champion_df.to_html(index=False), unsafe_allow_html=True)
+st.write(champion_df.to_html(), unsafe_allow_html=True)
