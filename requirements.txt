@@ -3,7 +3,7 @@ matplotlib
 numpy
 pandas
 seaborn
-streamlit
+streamlit=1.10.0
 lxml
 plotly
 streamlit-aggrid
