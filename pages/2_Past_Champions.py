@@ -1,4 +1,5 @@
 import streamlit as st
+from st_aggrid import AgGrid
 
 import pandas as pd
 import plotly.express as px
@@ -71,4 +72,4 @@ st.text(" ")
 st.text(" ")
 st.text(" ")
 st.text(" ")
-st.table(champions)
+AgGrid(champions)
