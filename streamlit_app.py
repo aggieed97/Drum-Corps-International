@@ -13,8 +13,4 @@ corps_at_the_crest_image = Image.open('images/corps_at_the_crest_prediction.png'
 
 col1, col2, col3 = st.columns([3, 5, 0.2])
 
-col2.title('August 13, 2022')
 col2.image(finals_pred_image, caption='2022 Finals Predictions, Indianpolis, IN')
-
-col1.title('June 24, 2022')
-col1.image(corps_at_the_crest_image, caption='2022 Corps at the Crest, Vista,CA')
