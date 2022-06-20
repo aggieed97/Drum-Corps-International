@@ -14,7 +14,7 @@ color_discrete_map = dict(dci_colors.values)
 
 st.set_page_config(page_title="DCI Past Champions", layout="wide")
 
-st.title('World Class Drum Corps Champions by Year')
+st.title('World Class Drum Corps Championship History')
 
 fig1 = px.histogram(
     data_frame=champions,
@@ -74,7 +74,7 @@ st.text(" ")
 st.text(" ")
 st.text(" ")
 st.text(" ")
-
+st.title('World Class Champions by Year')
 caption_text = 'Including Ties in 1996, 1999, & 2000'
 
 def highlight_cols(s, coldict):
