@@ -12,5 +12,5 @@ finals_pred_image = Image.open('images/finals_predictions.png')
 corps_at_the_crest_image = Image.open('images/corps_at_the_crest_prediction.png')
 
 col1, col2, col3 = st.columns([3, 5, 0.2])
-
-st.image(finals_pred_image, caption='2022 Finals Predictions, Indianpolis, IN')
+col1.image(corps_at_the_crest_image, caption='2022 Corps at the Crest Predictions, Vista, CA')
+col1.image(finals_pred_image, caption='2022 Finals Predictions, Indianpolis, IN')
