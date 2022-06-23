@@ -102,6 +102,10 @@ col4.markdown(
     
     This will give us an idea of how the Corps are performing relative to how they've performed in the past.
     
+    From the figure below with the approach above, you can see that the Bluecoats scored better than expected \
+    throughout nearly all of the 2019 Season, but then fell below expectation the last week beginning in Allentown, PA \
+    and running through Championship Weekend.
     """
 )
 
+col4.image(actual_vs_expected, caption='Blue Coats Performance Evaluation for 2019')
