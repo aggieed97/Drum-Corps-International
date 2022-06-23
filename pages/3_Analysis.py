@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 from PIL import Image
 
@@ -15,9 +16,8 @@ st.markdown(
     1. [Naive Predictions Using Past Average Score Change for Each Individual Corps](#indavgscorechange)
     """)
 
-
-
 average_score_change = Image.open('images/score_change.png')
+actual_vs_expected = Image.open('images/actual_vs_expected.png')
 
 st.markdown('<a id="allavgscorechange"></a>', unsafe_allow_html=True)
 st.markdown('### Average Score Change (All World Class Corps)')
@@ -50,3 +50,58 @@ col2.markdown(
 
 st.markdown('<a id="indavgscorechange"></a>', unsafe_allow_html=True)
 st.markdown('### Average Score Change (Individual Corps)')
+
+score_change_mean_dict = {'Blue Devils': 1.12,
+                         'Blue Knights': 1.01,
+                         'Blue Stars': 0.98,
+                         'Bluecoats': 0.95,
+                         'Boston Crusaders': 0.96,
+                         'Carolina Crown': 0.96,
+                         'Colts': 0.95,
+                         'Crossmen': 0.95,
+                         'Genesis': 0.96,
+                         'Jersey Surf': 0.94,
+                         'Madison Scouts': 0.93,
+                         'Mandarins': 0.94,
+                         'Music City': 0.95,
+                         'Pacific Crest': 0.95,
+                         'Phantom Regiment': 0.94,
+                         'Santa Clara Vanguard': 0.95,
+                         'Seattle Cascades': 0.93,
+                         'Spirit of Atlanta': 0.93,
+                         'The Academy': 0.92,
+                         'The Cadets': 0.92,
+                         'The Cavaliers': 0.92,
+                         'Troopers': 0.92
+                         }
+
+score_change_df = pd.DataFrame.from_dict(score_change_mean_dict, orient='index',
+                columns = ['Average Score Change']).reset_index().rename(columns={'index':'Drum Corps'})
+
+final_score_change_df = score_change_df.style.set_caption('Average Score Change by Corps (2017-2020)').hide_index() \
+    .format({'Average Score Change':'{:.3}'}) \
+    .set_table_styles([dict(selector='th', props=[('text-align', 'center')])]) \
+    .set_table_styles([{'selector': 'th.col_heading', 'props': 'text-align: center;'}], overwrite=False)
+
+col3, col4 = st.columns([3, 5])
+col3.write(final_score_change_df.to_html(), unsafe_allow_html=True)
+
+col4.markdown(
+    """
+    In the table on the left, we have the average score change by performance for each Individual World Class Corps \
+    from 2017-2019.  We use those dates to reflect what we saw above with the step change between 2013-2015 and \
+    2017-2019.
+    
+    Using this information, once we know each Corps beginning score, we can project out the total scores \
+    with a naive approach by adding these averages to the previous final score.
+    
+    For example, if the Blue Devils score a 70.0 on their first performance on Saturday, June 25th, \
+    we can then predict that they will score a 71.12 on their 2nd performance on Sunday, June 26th.
+    
+    These calculated values can then be use as "expected" scores that we can compare against the actual scores.
+    
+    This will give us an idea of how the Corps are performing relative to how they've performed in the past.
+    
+    """
+)
+
