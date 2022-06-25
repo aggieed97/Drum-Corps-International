@@ -12,7 +12,7 @@ st.markdown(
     
     Feel free to browse the site and let me know what you think.  Let us enjoy the 2022 Season Together!
     
-    1. [Current Predictions](#predictions)
+    1. [Today's Predictions](#predictions)
     1. [Finals Predictions](#finals)
     1. [Past Predictions](#pastpredictions)
     """)
