@@ -12,7 +12,7 @@ st.markdown(
     
     Feel free to browse the site and let me know what you think.  Let us enjoy the 2022 Season Together!
     
-    1. [Today's Predictions](#predictions)
+    1. [Weekend Predictions](#predictions)
     1. [Finals Predictions](#finals)
     1. [Past Predictions](#pastpredictions)
     """)
@@ -20,12 +20,16 @@ st.markdown(
 finals_pred_image = Image.open('images/finals_predictions.png')
 corps_at_the_crest_image = Image.open('images/corps_at_the_crest_predictions.png')
 drum_corps_at_the_rose_bowl_image = Image.open('images/drum_corps_at_the_rose_bowl_predictions.png')
+western_corps_connection_image = Image.open('images/western_corps_connection_predictions.png')
 
-col1, col2, col3 = st.columns([3, 5, 0.2])
+col1, col2, col3 = st.columns([3, 3, 0.2])
 
 col1.markdown('<a id="predictions"></a>', unsafe_allow_html=True)
-col1.markdown("## Today's Predictions")
-col1.image(drum_corps_at_the_rose_bowl_image, caption='2022 Corps at the Crest Predictions, Vista, CA')
+col1.markdown("## Saturday Predictions")
+col1.image(drum_corps_at_the_rose_bowl_image, caption='2022 Drum Corps at the Rose Bowl Predictions, Pasadena, CA')
+col2.text(" ")
+col2.markdown("## Sunday Predictions")
+col2.image(western_corps_connection_image, caption='2022 Western Corps Connections Predictions, San Bernardino, CA')
 
 col1.markdown('<a id="finals"></a>', unsafe_allow_html=True)
 col1.markdown('## Finals Predictions')
