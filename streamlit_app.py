@@ -10,6 +10,8 @@ st.markdown(
     Welcome to my Drum Corps International (DCI) Analysis page.  Here you will find information on \
     DCI Score Predictions, Historical Scores (2013-2019), as well as Different Types of Analyses.
     
+    You can find a graph of the current 2022 Scores to Date on the Historical Scores page and drilling down to 2022.
+    
     Feel free to browse the site and let me know what you think.  Let us enjoy the 2022 Season Together!
     
     1. [Weekend Predictions](#predictions)
