@@ -24,6 +24,7 @@ corps_at_the_crest_image = Image.open('images/corps_at_the_crest_predictions.png
 drum_corps_at_the_rose_bowl_image = Image.open('images/drum_corps_at_the_rose_bowl_predictions.png')
 western_corps_connection_image = Image.open('images/western_corps_connection_predictions.png')
 tour_premiere_image = Image.open('images/tour_premiere_predictions.png')
+central_indiana_image = Image.open('images/central_indiana_predictions.png')
 
 col1, col2, col3 = st.columns([3, 3, 0.2])
 
@@ -32,7 +33,7 @@ col1.markdown("## Today's Predictions")
 
 #col2.text(" ")
 #col2.markdown("## Sunday Predictions")
-col1.image(tour_premiere_image, caption='2022 Tour Premiere Predictions, Detroit, MI')
+col1.image(central_indiana_image, caption='2022 DCI Central Indiana Predictions, Muncie, IN')
 
 col1.markdown('<a id="finals"></a>', unsafe_allow_html=True)
 col1.markdown('## Finals Predictions')
@@ -41,6 +42,7 @@ col1.image(finals_pred_image, caption='2022 Finals Predictions, Indianpolis, IN'
 col1.markdown('<a id="pastpredictions"></a>', unsafe_allow_html=True)
 col1.markdown('## Past Predictions')
 
+col1.image(tour_premiere_image, caption='2022 DCI Tour Premiere Predictions, Detroit, MI')
 col1.image(western_corps_connection_image, caption='2022 Western Corps Connections Predictions, San Bernardino, CA')
 col1.image(drum_corps_at_the_rose_bowl_image, caption='2022 Drum Corps at the Rose Bowl Predictions, Pasadena, CA')
 col1.image(corps_at_the_crest_image, caption='2022 Corps at the Crest Predictions, Vista, CA')
