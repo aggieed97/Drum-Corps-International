@@ -105,6 +105,10 @@ col4.markdown(
     From the figure below with the approach above, you can see that the Bluecoats scored better than expected \
     throughout nearly all of the 2019 Season, but then fell below expectation the last week beginning in Allentown, PA \
     and running through Championship Weekend.
+    
+    7/3 Update: Noticed that all the Corps have decreased the number of shows they are performing in 2022, so I ended \
+    up increasing all the values in the left table by 15% to account for that.  Will see if that makes a difference \
+    in the end.
     """
 )
 

@@ -1,4 +1,6 @@
 import streamlit as st
+import pandas as pd
+import plotly.express as px
 
 from PIL import Image
 
@@ -14,7 +16,7 @@ st.markdown(
     
     Feel free to browse the site and let me know what you think.  Let us enjoy the 2022 Season Together!
     
-    1. [Today's Predictions](#predictions)
+    1. [2022 Analysis](#analysis)
     1. [Finals Predictions](#finals)
     1. [Past Predictions](#pastpredictions)
     """)
@@ -26,23 +28,76 @@ western_corps_connection_image = Image.open('images/western_corps_connection_pre
 tour_premiere_image = Image.open('images/tour_premiere_predictions.png')
 central_indiana_image = Image.open('images/central_indiana_predictions.png')
 
-col1, col2, col3 = st.columns([3, 3, 0.2])
+df = pd.read_csv('pages/2022-World-Class-DCI-scores.csv')
+dci_colors = pd.read_csv('pages/drum_corps_colors.csv')
+color_discrete_map = dict(dci_colors.values)
 
-col1.markdown('<a id="predictions"></a>', unsafe_allow_html=True)
-col1.markdown("## Today's Predictions")
+first_place_finishes = df.query("Rank == '1st'").Corps.value_counts().reset_index().rename(columns={"index":"Drum Corps", "Corps":"1st Place Finish"})
+
+
+col1, col2, col3 = st.columns([4, 3, 0.2])
+
+col1.markdown('<a id="analysis"></a>', unsafe_allow_html=True)
+col1.markdown("## 2022 Analysis")
+fig1 = px.bar(
+    data_frame=first_place_finishes,
+    x="1st Place Finish",
+    y='Drum Corps',
+    color='Drum Corps',
+    color_discrete_map=color_discrete_map,
+).update_layout(
+    title={
+        'text': 'Drum Corps International <br># of 1st Place Finishes by Corps to Date',
+        'y': 0.9,
+        'x': 0.5,
+        'xanchor': 'center',
+        'yanchor': 'top'
+    },
+    xaxis_title='1st Place Rank Count',
+    yaxis_title='Drum Corps',
+    font=dict(
+        size=15,
+    ),
+    width=250,
+    height=500,
+    showlegend=False,
+    margin=dict(
+        l=25,
+        r=25,
+        b=100,
+        t=100,
+        pad=4
+    ),
+    xaxis = dict(
+        tickmode='linear',
+        tick0=0,
+        dtick=1
+    )
+).add_annotation(dict(font=dict(color='white', size=15),
+                                                       x=0.8,
+                                                       y=-0.3,
+                                                       showarrow=False,
+                                                       text="Data: https://www.dci.org<br>Graphic: @Danger009Mouse",
+                                                       textangle=0,
+                                                       xanchor='left',
+                                                       xref="paper",
+                                                       yref="paper")
+                                                  )
+st.plotly_chart(fig1, use_container_width=True)
 
 #col2.text(" ")
 #col2.markdown("## Sunday Predictions")
-col1.image(central_indiana_image, caption='2022 DCI Central Indiana Predictions, Muncie, IN')
+col4, col5, col6 = st.columns([2, 3, 0.2])
 
-col1.markdown('<a id="finals"></a>', unsafe_allow_html=True)
-col1.markdown('## Finals Predictions')
-col1.image(finals_pred_image, caption='2022 Finals Predictions, Indianpolis, IN')
+col4.markdown('<a id="finals"></a>', unsafe_allow_html=True)
+col4.markdown('## Finals Predictions')
+col4.image(finals_pred_image, caption='2022 Finals Predictions, Indianpolis, IN')
 
-col1.markdown('<a id="pastpredictions"></a>', unsafe_allow_html=True)
-col1.markdown('## Past Predictions')
+col4.markdown('<a id="pastpredictions"></a>', unsafe_allow_html=True)
+col4.markdown('## Past Predictions')
 
-col1.image(tour_premiere_image, caption='2022 DCI Tour Premiere Predictions, Detroit, MI')
-col1.image(western_corps_connection_image, caption='2022 Western Corps Connections Predictions, San Bernardino, CA')
-col1.image(drum_corps_at_the_rose_bowl_image, caption='2022 Drum Corps at the Rose Bowl Predictions, Pasadena, CA')
-col1.image(corps_at_the_crest_image, caption='2022 Corps at the Crest Predictions, Vista, CA')
+col4.image(central_indiana_image, caption='2022 DCI Central Indiana Predictions, Muncie, IN')
+col4.image(tour_premiere_image, caption='2022 DCI Tour Premiere Predictions, Detroit, MI')
+col4.image(western_corps_connection_image, caption='2022 Western Corps Connections Predictions, San Bernardino, CA')
+col4.image(drum_corps_at_the_rose_bowl_image, caption='2022 Drum Corps at the Rose Bowl Predictions, Pasadena, CA')
+col4.image(corps_at_the_crest_image, caption='2022 Corps at the Crest Predictions, Vista, CA')
