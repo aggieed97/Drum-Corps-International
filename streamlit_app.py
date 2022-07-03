@@ -34,11 +34,61 @@ color_discrete_map = dict(dci_colors.values)
 
 first_place_finishes = df.query("Rank == '1st'").Corps.value_counts().reset_index().rename(columns={"index":"Drum Corps", "Corps":"1st Place Finish"})
 
+df['Date'] = pd.to_datetime(df.Date)
+df['Year'] = df.Date.dt.year
+score_df = df.sort_values(by=['Corps', 'Date']).reset_index(drop=True)
+corps = list(score_df.Corps.unique())
+corps.insert(0, "All")
+
 
 col1, col2, col3 = st.columns([4, 3, 0.2])
 
 col1.markdown('<a id="analysis"></a>', unsafe_allow_html=True)
 col1.markdown("## 2022 Analysis")
+
+corp = st.selectbox('Choose a Drum Corps:', corps)
+
+if corp == 'All':
+    filtered_df = score_df.copy()
+    height = 900
+    annotation_xtext = 0.85
+    annotation_ytext = -0.10
+else:
+    filtered_df = score_df[(score_df.Corps == corp)].reset_index(drop=True)
+    height = 500
+    annotation_xtext = 0.85
+    annotation_ytext = -0.20
+
+fig2 = px.line(
+    data_frame=filtered_df,
+    x='Date',
+    y='Score',
+    color='Corps',
+    color_discrete_map=color_discrete_map,
+    markers=True,
+    hover_name='Location',
+    template='seaborn'
+).update_layout(
+    autosize=False,
+    width=500,
+    height=height,
+    title=f'{corp} Scores for 2022',
+    font=dict(
+        size=20
+    )
+).add_annotation(dict(font=dict(color='white', size=15),
+                      x=annotation_xtext,
+                      y=annotation_ytext,
+                      showarrow=False,
+                      text="Data: https://dci.org<br>Graphic: @Danger009Mouse",
+                      textangle=0,
+                      xanchor='left',
+                      xref="paper",
+                      yref="paper")
+                 )
+
+st.plotly_chart(fig2, use_container_width=True)
+
 fig1 = px.bar(
     data_frame=first_place_finishes,
     x="1st Place Finish",
