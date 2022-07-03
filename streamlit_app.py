@@ -41,7 +41,7 @@ corps = list(score_df.Corps.unique())
 corps.insert(0, "All")
 
 
-col1, col2, col3 = st.columns([4, 3, 0.2])
+col1, col2, col3 = st.columns([5, 3, 0.2])
 
 col1.markdown('<a id="analysis"></a>', unsafe_allow_html=True)
 col1.markdown("## 2022 Analysis")
@@ -76,7 +76,7 @@ fig2 = px.line(
     font=dict(
         size=20
     )
-).add_annotation(dict(font=dict(color='white', size=15),
+).add_annotation(dict(font=dict(size=15),
                       x=annotation_xtext,
                       y=annotation_ytext,
                       showarrow=False,

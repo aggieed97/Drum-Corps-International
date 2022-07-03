@@ -55,7 +55,7 @@ fig2 = px.line(
     font=dict(
         size=20
     )
-).add_annotation(dict(font=dict(color='white', size=15),
+).add_annotation(dict(font=dict(size=15),
                       x=annotation_xtext,
                       y=annotation_ytext,
                       showarrow=False,
