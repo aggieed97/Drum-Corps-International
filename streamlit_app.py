@@ -138,10 +138,10 @@ fig1 = px.bar(
                                                   )
 st.plotly_chart(fig1, use_container_width=True)
 
-col1.text(" ")
-col1.markdown('<a id="max_rank"></a>', unsafe_allow_html=True)
-col1.markdown("## Rank by Maximum Score To Date")
-col1.image(max_rank_image, caption='Drum Corps Rank by Max Score to Date')
+st.text(" ")
+st.markdown('<a id="max_rank"></a>', unsafe_allow_html=True)
+st.markdown("## Rank by Maximum Score To Date")
+st.image(max_rank_image, caption='Drum Corps Rank by Max Score to Date')
 
 col4, col5, col6 = st.columns([2, 3, 0.2])
 
