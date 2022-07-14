@@ -22,6 +22,7 @@ st.markdown(
     1. [Past Predictions](#pastpredictions)
     """)
 
+max_rank_image = Image.open('images/rank_by_max_score.png')
 finals_pred_image = Image.open('images/finals_predictions.png')
 corps_at_the_crest_image = Image.open('images/corps_at_the_crest_predictions.png')
 drum_corps_at_the_rose_bowl_image = Image.open('images/drum_corps_at_the_rose_bowl_predictions.png')
@@ -136,8 +137,10 @@ fig1 = px.bar(
                                                   )
 st.plotly_chart(fig1, use_container_width=True)
 
-#col2.text(" ")
-#col2.markdown("## Sunday Predictions")
+col2.text(" ")
+col2.markdown("## Rank by Maximum Score To Date")
+col2.image(max_rank_image, caption='Drum Corps Rank by Max Score to Date')
+
 col4, col5, col6 = st.columns([2, 3, 0.2])
 
 col4.markdown('<a id="finals"></a>', unsafe_allow_html=True)
