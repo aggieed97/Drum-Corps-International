@@ -18,6 +18,7 @@ st.markdown(
     Feel free to browse the site and let me know what you think.  Let us enjoy the 2022 Season Together!
     
     1. [2022 Analysis](#analysis)
+    1. [Max Rank by Score](#max_rank)
     1. [Finals Predictions](#finals)
     1. [Past Predictions](#pastpredictions)
     """)
@@ -138,6 +139,7 @@ fig1 = px.bar(
 st.plotly_chart(fig1, use_container_width=True)
 
 col1.text(" ")
+col1.markdown('<a id="max_rank"></a>', unsafe_allow_html=True)
 col1.markdown("## Rank by Maximum Score To Date")
 col1.image(max_rank_image, caption='Drum Corps Rank by Max Score to Date')
 
