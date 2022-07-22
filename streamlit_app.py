@@ -33,6 +33,7 @@ tour_premiere_image = Image.open('images/tour_premiere_predictions.png')
 central_indiana_image = Image.open('images/central_indiana_predictions.png')
 dci_austin = Image.open('images/austin_predictions.png')
 dci_denton = Image.open('images/denton_predictions.png')
+dci_houston = Image.open('images/houston_predictions.png')
 
 df = pd.read_csv('pages/2022-World-Class-DCI-scores.csv')
 dci_colors = pd.read_csv('pages/drum_corps_colors.csv')
@@ -145,9 +146,7 @@ col4, col5, col6 = st.columns([2, 2, 0.2])
 
 #col4.text(" ")
 col4.markdown('<a id="today"></a>', unsafe_allow_html=True)
-col4.image(dci_austin, caption='DCI Austin Predictions')
-col5.image(dci_denton, caption='DCI Denton Predictions')
-
+col4.image(dci_houston, caption='DCI Houston Predictions')
 col4.text(" ")
 col4.text(" ")
 col4.text(" ")
@@ -170,6 +169,8 @@ col4.image(finals_pred_image, caption='2022 Finals Predictions, Indianpolis, IN'
 col4.markdown('<a id="pastpredictions"></a>', unsafe_allow_html=True)
 col4.markdown('## Past Predictions')
 
+col4.image(dci_austin, caption='DCI Austin Predictions')
+col4.image(dci_denton, caption='DCI Denton Predictions')
 col4.image(central_indiana_image, caption='2022 DCI Central Indiana Predictions, Muncie, IN')
 col4.image(tour_premiere_image, caption='2022 DCI Tour Premiere Predictions, Detroit, MI')
 col4.image(western_corps_connection_image, caption='2022 Western Corps Connections Predictions, San Bernardino, CA')
