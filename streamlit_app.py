@@ -18,6 +18,7 @@ st.markdown(
     Feel free to browse the site and let me know what you think.  Let us enjoy the 2022 Season Together!
     
     1. [2022 Analysis](#analysis)
+    1. [Today's Predictions](#today)
     1. [Max Rank by Score](#max_rank)
     1. [Finals Predictions](#finals)
     1. [Past Predictions](#pastpredictions)
@@ -30,6 +31,9 @@ drum_corps_at_the_rose_bowl_image = Image.open('images/drum_corps_at_the_rose_bo
 western_corps_connection_image = Image.open('images/western_corps_connection_predictions.png')
 tour_premiere_image = Image.open('images/tour_premiere_predictions.png')
 central_indiana_image = Image.open('images/central_indiana_predictions.png')
+dci_austin = Image.open('images/austin_predictions.png')
+dci_denton = Image.open('images/denton_predictions.png')
+dci_houston = Image.open('images/houston_predictions.png')
 
 df = pd.read_csv('pages/2022-World-Class-DCI-scores.csv')
 dci_colors = pd.read_csv('pages/drum_corps_colors.csv')
@@ -138,9 +142,22 @@ fig1 = px.bar(
                                                   )
 st.plotly_chart(fig1, use_container_width=True)
 
-col4, col5, col6 = st.columns([2, 3, 0.2])
+col4, col5, col6 = st.columns([2, 2, 0.2])
 
 #col4.text(" ")
+col4.markdown('<a id="today"></a>', unsafe_allow_html=True)
+col4.image(dci_houston, caption='DCI Houston Predictions')
+col4.text(" ")
+col4.text(" ")
+col4.text(" ")
+col4.text(" ")
+col4.text(" ")
+col4.text(" ")
+col4.text(" ")
+col4.text(" ")
+col4.text(" ")
+
+
 col4.markdown('<a id="max_rank"></a>', unsafe_allow_html=True)
 col4.markdown("## Rank by Maximum Score To Date")
 col4.image(max_rank_image, caption='Drum Corps Rank by Max Score to Date')
@@ -152,6 +169,8 @@ col4.image(finals_pred_image, caption='2022 Finals Predictions, Indianpolis, IN'
 col4.markdown('<a id="pastpredictions"></a>', unsafe_allow_html=True)
 col4.markdown('## Past Predictions')
 
+col4.image(dci_austin, caption='DCI Austin Predictions')
+col4.image(dci_denton, caption='DCI Denton Predictions')
 col4.image(central_indiana_image, caption='2022 DCI Central Indiana Predictions, Muncie, IN')
 col4.image(tour_premiere_image, caption='2022 DCI Tour Premiere Predictions, Detroit, MI')
 col4.image(western_corps_connection_image, caption='2022 Western Corps Connections Predictions, San Bernardino, CA')
