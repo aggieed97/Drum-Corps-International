@@ -127,7 +127,7 @@ def get_line_chart(caption_picked):
         fig2.add_scatter(x=[d.x[-1]], y=[d.y[-1]],
                         mode='markers+text',
                         text=d.y[-1],
-                        textfont=dict(color=d.line.color),
+                        textfont=dict(color=d.line.color, size=10),
                         textposition='middle right',
                         marker=dict(color=d.line.color, size=10),
                         legendgroup=d.name,
