@@ -54,8 +54,13 @@ def music_scores_by_drum_corps(corp='Blue Devils'):
 
     #larger_music_df = larger_df[larger_df.drum_corps == corp].reset_index(drop=True)
     larger_music_df = larger_df[larger_df.drum_corps.isin(corp)].reset_index(drop=True)
-    larger_music_df['music_analysis_score'] = (larger_music_df['music_analysis1_score'] + larger_music_df[
-        'music_analysis2_score']) / 2
+
+    if larger_music_df['music_analysis_score'][0] > 0:
+        larger_music_df['music_analysis_score'] = (larger_music_df['music_analysis1_score'] + larger_music_df[
+            'music_analysis2_score']) / 2
+    else:
+        larger_music_df['music_analysis_score'] = (larger_music_df['music_analysis1_score']
+
     larger_music_df = larger_music_df[music_cols]
 
     #music_df = df[df.drum_corps == corp].reset_index(drop=True)
