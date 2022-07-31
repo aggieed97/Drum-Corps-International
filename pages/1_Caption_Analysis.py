@@ -59,7 +59,7 @@ def music_scores_by_drum_corps(corp='Blue Devils'):
         larger_music_df['music_analysis_score'] = (larger_music_df['music_analysis1_score'] + larger_music_df[
             'music_analysis2_score']) / 2
     else:
-        larger_music_df['music_analysis_score'] = (larger_music_df['music_analysis1_score']
+        larger_music_df['music_analysis_score'] = larger_music_df['music_analysis1_score']
 
     larger_music_df = larger_music_df[music_cols]
 
