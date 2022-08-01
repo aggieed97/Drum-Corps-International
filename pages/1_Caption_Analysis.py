@@ -100,12 +100,13 @@ def total_scores_by_drum_corps(corp):
 
     #ge_df = df[df.drum_corps == corp].reset_index(drop=True)
     ge_df = df[df.drum_corps.isin(corp)].reset_index(drop=True)
-    ge_df = ge_df[
-        ['date', 'location', 'drum_corps', 'total_score']]
+    ge_df = ge_df[['date', 'location', 'drum_corps', 'total_score']]
 
     #final_df = pd.concat([ge_df, larger_ge_df]).sort_values(by='date')
     final_df = pd.concat([ge_df, larger_ge_df]).sort_values(by=['drum_corps', 'date'])
     final_df = final_df[(final_df != 0).all(1)].reset_index(drop=True)
+
+    return final_df
 
 def get_line_chart(caption_picked):
     fig2 = px.line(
