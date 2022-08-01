@@ -25,7 +25,7 @@ corps.sort()
 #corps.insert(0, "All")
 
 captions_list = ['General Effect Total', 'Visual Proficiency', 'Visual Analysis', 'Visual Color Guard',
-                 'Visual Total', 'Music Brass', 'Music Analysis', 'Music Percussion', 'Music Total']
+                 'Visual Total', 'Music Brass', 'Music Analysis', 'Music Percussion', 'Music Total', 'Total Score']
 
 
 def ge_scores_by_drum_corps(corp):
@@ -206,7 +206,7 @@ elif 'Music' in caption:
     st.plotly_chart(fig2, use_container_width=True)
     st.table(filtered_df)
 
-elif caption == 'Total':
+elif caption == 'Total Score':
     filtered_df = total_scores_by_drum_corps(corp=corp)
     filtered_df['date']=filtered_df['date'].astype(str)
 
