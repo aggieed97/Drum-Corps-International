@@ -93,6 +93,20 @@ def visual_scores_by_drum_corps(corp='Blue Devils'):
 
     return final_df
 
+def total_scores_by_drum_corps(corp):
+    larger_ge_df = larger_df[larger_df.drum_corps.isin(corp)].reset_index(drop=True)
+    #larger_ge_df = larger_df[larger_df.drum_corps == corp].reset_index(drop=True)
+    larger_ge_df = larger_ge_df[['date', 'location', 'drum_corps', 'total_score']]
+
+    #ge_df = df[df.drum_corps == corp].reset_index(drop=True)
+    ge_df = df[df.drum_corps.isin(corp)].reset_index(drop=True)
+    ge_df = ge_df[
+        ['date', 'location', 'drum_corps', 'total_score']]
+
+    #final_df = pd.concat([ge_df, larger_ge_df]).sort_values(by='date')
+    final_df = pd.concat([ge_df, larger_ge_df]).sort_values(by=['drum_corps', 'date'])
+    final_df = final_df[(final_df != 0).all(1)].reset_index(drop=True)
+
 def get_line_chart(caption_picked):
     fig2 = px.line(
         data_frame=filtered_df,
@@ -189,6 +203,14 @@ elif 'Music' in caption:
     fig2 = get_line_chart(caption_picked=y)
 
 
+    st.plotly_chart(fig2, use_container_width=True)
+    st.table(filtered_df)
+
+elif caption == 'Total':
+    filtered_df = total_scores_by_drum_corps(corp=corp)
+    filtered_df['date']=filtered_df['date'].astype(str)
+
+    fig2 = get_line_chart(caption_picked='total_score')
     st.plotly_chart(fig2, use_container_width=True)
     st.table(filtered_df)
 
