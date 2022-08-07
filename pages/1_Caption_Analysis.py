@@ -207,7 +207,7 @@ elif 'Music' in caption:
     st.plotly_chart(fig2, use_container_width=True)
     st.table(filtered_df)
 
-elif caption == 'Total Score':
+elif caption == 'Total':
     filtered_df = total_scores_by_drum_corps(corp=corp)
     filtered_df['date']=filtered_df['date'].astype(str)
 
