@@ -25,7 +25,7 @@ corps.sort()
 #corps.insert(0, "All")
 
 captions_list = ['General Effect Total', 'Visual Proficiency', 'Visual Analysis', 'Visual Color Guard',
-                 'Visual Total', 'Music Brass', 'Music Analysis', 'Music Percussion', 'Music Total', 'Total Score']
+                 'Visual Total', 'Music Brass', 'Music Analysis', 'Music Percussion', 'Music Total', 'Total']
 
 
 def ge_scores_by_drum_corps(corp):
