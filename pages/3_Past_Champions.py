@@ -57,7 +57,7 @@ fig1 = px.histogram(
                                       xanchor='left',
                                       xref="paper",
                                       yref="paper")
-                                 ).add_annotation(dict(font=dict(color='white', size=15),
+                                 ).add_annotation(dict(font=dict(size=15),
                                                        x=0.5,
                                                        y=-0.13,
                                                        showarrow=False,
