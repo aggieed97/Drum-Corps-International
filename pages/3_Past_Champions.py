@@ -48,7 +48,7 @@ fig1 = px.histogram(
     categoryorder="total ascending"
 ).update_traces(hovertemplate='<i>Championships</i>: ' + '%{x}' + '<extra></extra>',
                 selector=dict(type="histogram")
-                ).add_annotation(dict(font=dict(color='white', size=15),
+                ).add_annotation(dict(font=dict(size=15),
                                       x=0,
                                       y=-0.12,
                                       showarrow=False,
