@@ -1,15 +1,12 @@
 Date,Location,Rank,Score,Corps
-2022-06-24,"Vista, CA",1st,69.95,Santa Clara Vanguard
 2022-06-24,"Vista, CA",2nd,65.3,Mandarins
 2022-06-24,"Vista, CA",3rd,61.45,The Academy
 2022-06-24,"Vista, CA",4th,57.75,Pacific Crest
 2022-06-25,"Pasadena, CA",1st,72.3,Blue Devils
-2022-06-25,"Pasadena, CA",2nd,70.9,Santa Clara Vanguard
 2022-06-25,"Pasadena, CA",3rd,66.45,Mandarins
 2022-06-25,"Pasadena, CA",4th,62.15,The Academy
 2022-06-25,"Pasadena, CA",5th,57.35,Pacific Crest
 2022-06-26,"San Bernardino, CA",1st,73.5,Blue Devils
-2022-06-26,"San Bernardino, CA",2nd,71.85,Santa Clara Vanguard
 2022-06-26,"San Bernardino, CA",3rd,67.65,Mandarins
 2022-06-26,"San Bernardino, CA",4th,63.65,The Academy
 2022-06-26,"San Bernardino, CA",5th,58.25,Pacific Crest
@@ -36,7 +33,6 @@ Date,Location,Rank,Score,Corps
 2022-07-02,"Quincy, MA",2nd,69.15,The Cadets
 2022-07-02,"Quincy, MA",3rd,57.0,Jersey Surf
 2022-07-02,"Tempe, AZ",1st,75.45,Blue Devils
-2022-07-02,"Tempe, AZ",2nd,74.05,Santa Clara Vanguard
 2022-07-02,"Tempe, AZ",3rd,66.7,Blue Knights
 2022-07-02,"Tempe, AZ",4th,63.5,The Academy
 2022-07-02,"Tempe, AZ",5th,59.9,Pacific Crest
@@ -50,7 +46,6 @@ Date,Location,Rank,Score,Corps
 2022-07-03,"Lynn, MA",2nd,71.35,The Cadets
 2022-07-03,"Lynn, MA",3rd,59.1,Jersey Surf
 2022-07-05,"Fresno, CA",1st,77.6,Blue Devils
-2022-07-05,"Fresno, CA",2nd,75.9,Santa Clara Vanguard
 2022-07-05,"Fresno, CA",3rd,71.3,Mandarins
 2022-07-05,"Fresno, CA",4th,68.3,Blue Knights
 2022-07-05,"Fresno, CA",5th,65.35,The Academy
@@ -75,7 +70,6 @@ Date,Location,Rank,Score,Corps
 2022-07-08,"Dubuque, IA",2nd,68.95,Colts
 2022-07-08,"Dubuque, IA",3rd,67.4,Madison Scouts
 2022-07-08,"Sacramento, CA",1st,79.6,Blue Devils
-2022-07-08,"Sacramento, CA",2nd,77.75,Santa Clara Vanguard
 2022-07-08,"Sacramento, CA",3rd,73.3,Mandarins
 2022-07-08,"Sacramento, CA",4th,62.7,Pacific Crest
 2022-07-09,"DeKalb, IL",1st,80.45,Bluecoats
@@ -96,7 +90,6 @@ Date,Location,Rank,Score,Corps
 2022-07-10,"La Crosse, WI",3rd,70.75,Colts
 2022-07-10,"La Crosse, WI",4th,69.4,Madison Scouts
 2022-07-10,"Stanford, CA",1st,82.5,Blue Devils
-2022-07-10,"Stanford, CA",2nd,79.95,Santa Clara Vanguard
 2022-07-10,"Stanford, CA",3rd,76.95,Mandarins
 2022-07-10,"Stanford, CA",4th,63.6,Pacific Crest
 2022-07-11,"Tri Cities, WA",1st,72.55,Blue Knights
@@ -118,7 +111,6 @@ Date,Location,Rank,Score,Corps
 2022-07-13,"Eau Claire, WI",3rd,73.5,Colts
 2022-07-13,"Eau Claire, WI",4th,70.75,Madison Scouts
 2022-07-13,"Ogden, UT",1st,84.55,Blue Devils
-2022-07-13,"Ogden, UT",2nd,82.55,Santa Clara Vanguard
 2022-07-13,"Ogden, UT",3rd,78.8,Mandarins
 2022-07-13,"Ogden, UT",4th,74.35,Blue Knights
 2022-07-13,"Ogden, UT",5th,70.85,Troopers
@@ -128,7 +120,6 @@ Date,Location,Rank,Score,Corps
 2022-07-14,"Tupelo, MS",3rd,75.4,Crossmen
 2022-07-14,"Tupelo, MS",4th,71.75,Music City
 2022-07-16,"Fort Collins, CO",1st,85.95,Blue Devils
-2022-07-16,"Fort Collins, CO",2nd,83.35,Santa Clara Vanguard
 2022-07-16,"Fort Collins, CO",3rd,79.8,Mandarins
 2022-07-16,"Fort Collins, CO",4th,75.85,Blue Knights
 2022-07-16,"Fort Collins, CO",5th,72.4,Troopers
@@ -159,14 +150,12 @@ Date,Location,Rank,Score,Corps
 2022-07-19,"Broken Arrow, OK",2nd,87.5,Carolina Crown
 2022-07-19,"Broken Arrow, OK",3rd,87.175,Bluecoats
 2022-07-19,"Broken Arrow, OK",4th,86.8,Boston Crusaders
-2022-07-19,"Broken Arrow, OK",5th,85.75,Santa Clara Vanguard
 2022-07-19,"Broken Arrow, OK",6th,82.6,Blue Stars
 2022-07-19,"Broken Arrow, OK",7th,80.6,The Cavaliers
 2022-07-19,"Broken Arrow, OK",8th,77.75,Blue Knights
 2022-07-21,"Denton, TX",1st,88.55,Carolina Crown
 2022-07-21,"Denton, TX",2nd,88.25,Boston Crusaders
 2022-07-21,"Denton, TX",3rd,87.75,Bluecoats
-2022-07-21,"Denton, TX",4th,87.2,Santa Clara Vanguard
 2022-07-21,"Denton, TX",5th,84.15,The Cadets
 2022-07-21,"Denton, TX",6th,82.15,Mandarins
 2022-07-21,"Denton, TX",7th,81.15,Phantom Regiment
@@ -191,7 +180,6 @@ Date,Location,Rank,Score,Corps
 2022-07-23,"San Antonio, TX",2nd,90.7,Boston Crusaders
 2022-07-23,"San Antonio, TX",3rd,90.425,Carolina Crown
 2022-07-23,"San Antonio, TX",4th,89.9,Bluecoats
-2022-07-23,"San Antonio, TX",5th,88.75,Santa Clara Vanguard
 2022-07-23,"San Antonio, TX",6th,86.025,The Cadets
 2022-07-23,"San Antonio, TX",7th,84.613,Blue Stars
 2022-07-23,"San Antonio, TX",8th,83.813,Mandarins
@@ -222,7 +210,6 @@ Date,Location,Rank,Score,Corps
 2022-07-25,"Mesquite, TX",8th,72.3,Pacific Crest
 2022-07-25,"Mesquite, TX",9th,68.25,Genesis
 2022-07-26,"McKinney, TX",1st,91.45,Carolina Crown
-2022-07-26,"McKinney, TX",2nd,89.9,Santa Clara Vanguard
 2022-07-26,"McKinney, TX",3rd,85.95,Blue Stars
 2022-07-26,"McKinney, TX",4th,84.1,Phantom Regiment
 2022-07-26,"McKinney, TX",5th,80.7,Colts
@@ -250,7 +237,6 @@ Date,Location,Rank,Score,Corps
 2022-07-30,"Atlanta, GA",2nd,93.875,Boston Crusaders
 2022-07-30,"Atlanta, GA",3rd,93.05,Carolina Crown
 2022-07-30,"Atlanta, GA",4th,92.225,Bluecoats
-2022-07-30,"Atlanta, GA",5th,90.95,Santa Clara Vanguard
 2022-07-30,"Atlanta, GA",6th,87.85,Blue Stars
 2022-07-30,"Atlanta, GA",7th,86.45,The Cavaliers
 2022-07-30,"Atlanta, GA",8th,85.95,Phantom Regiment
@@ -261,7 +247,6 @@ Date,Location,Rank,Score,Corps
 2022-07-30,"Atlanta, GA",13th,72.45,Genesis
 2022-07-31,"Winston-Salem, NC",1st,93.55,Boston Crusaders
 2022-07-31,"Winston-Salem, NC",2nd,92.725,Bluecoats
-2022-07-31,"Winston-Salem, NC",3rd,91.575,Santa Clara Vanguard
 2022-07-31,"Winston-Salem, NC",4th,88.7,The Cadets
 2022-07-31,"Winston-Salem, NC",5th,87.55,The Cavaliers
 2022-07-31,"Winston-Salem, NC",6th,83.5,Colts
@@ -283,7 +268,6 @@ Date,Location,Rank,Score,Corps
 2022-08-02,"Annapolis, MD",7th,73.65,Genesis
 2022-08-02,"Annapolis, MD",8th,68.7,Jersey Surf
 2022-08-02,"Salem, VA",1st,94.4,Carolina Crown
-2022-08-02,"Salem, VA",2nd,92.85,Santa Clara Vanguard
 2022-08-02,"Salem, VA",3rd,84.9,Colts
 2022-08-02,"Salem, VA",4th,74.85,Pacific Crest
 2022-08-02,"Sevierville, TN",1st,89.05,Blue Stars
@@ -314,7 +298,6 @@ Date,Location,Rank,Score,Corps
 2022-08-05,"Allentown, PA",8th,78.45,The Academy
 2022-08-05,"Allentown, PA",9th,78.0,Music City
 2022-08-06,"Allentown, PA",1st,95.075,Carolina Crown
-2022-08-06,"Allentown, PA",2nd,93.425,Santa Clara Vanguard
 2022-08-06,"Allentown, PA",3rd,91.325,The Cadets
 2022-08-06,"Allentown, PA",4th,90.9,Blue Stars
 2022-08-06,"Allentown, PA",5th,89.7,The Cavaliers
@@ -329,7 +312,6 @@ Date,Location,Rank,Score,Corps
 2022-08-07,"Pittsburgh, PA",3rd,84.5,Blue Knights
 2022-08-07,"Pittsburgh, PA",4th,83.55,Troopers
 2022-08-07,"Pittsburgh, PA",5th,76.65,Pacific Crest
-2022-08-08,"Cincinnati, OH",1st,93.05,Santa Clara Vanguard
 2022-08-08,"Cincinnati, OH",2nd,91.7,The Cadets
 2022-08-08,"Cincinnati, OH",3rd,84.95,Blue Knights
 2022-08-08,"Cincinnati, OH",4th,84.8,Troopers
@@ -339,7 +321,6 @@ Date,Location,Rank,Score,Corps
 2022-08-11,"Indianapolis, IN",2nd,96.5,Boston Crusaders
 2022-08-11,"Indianapolis, IN",3rd,95.7,Bluecoats
 2022-08-11,"Indianapolis, IN",4th,95.55,Carolina Crown
-2022-08-11,"Indianapolis, IN",5th,94.075,Santa Clara Vanguard
 2022-08-11,"Indianapolis, IN",6th,92.875,The Cadets
 2022-08-11,"Indianapolis, IN",7th,91.375,Blue Stars
 2022-08-11,"Indianapolis, IN",8th,91.138,The Cavaliers
@@ -359,7 +340,6 @@ Date,Location,Rank,Score,Corps
 2022-08-12,"Indianapolis, IN",2nd,96.975,Bluecoats
 2022-08-12,"Indianapolis, IN",2nd,96.975,Boston Crusaders
 2022-08-12,"Indianapolis, IN",4th,95.813,Carolina Crown
-2022-08-12,"Indianapolis, IN",5th,95.15,Santa Clara Vanguard
 2022-08-12,"Indianapolis, IN",6th,93.288,The Cadets
 2022-08-12,"Indianapolis, IN",7th,92.25,Blue Stars
 2022-08-12,"Indianapolis, IN",8th,91.863,The Cavaliers
@@ -379,7 +359,6 @@ Date,Location,Rank,Score,Corps
 2022-08-13,"Indianapolis, IN",2nd,97.325,Bluecoats
 2022-08-13,"Indianapolis, IN",2nd,97.325,Boston Crusaders
 2022-08-13,"Indianapolis, IN",4th,96.35,Carolina Crown
-2022-08-13,"Indianapolis, IN",5th,95.0,Santa Clara Vanguard
 2022-08-13,"Indianapolis, IN",6th,92.913,The Cadets
 2022-08-13,"Indianapolis, IN",7th,92.775,Blue Stars
 2022-08-13,"Indianapolis, IN",8th,90.675,Phantom Regiment
