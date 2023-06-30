@@ -35,7 +35,7 @@ dci_prelims = Image.open('images/prelims_predictions.png')
 dci_semis = Image.open('images/semis_predictions.png')
 dci_finals = Image.open('images/finals_predictions.png')
 
-df = pd.read_csv('pages/2022-World-Class-DCI-scores.csv')
+df = pd.read_csv('pages/2023-World-Class-DCI-scores.csv')
 dci_colors = pd.read_csv('pages/drum_corps_colors.csv')
 color_discrete_map = dict(dci_colors.values)
 
@@ -79,7 +79,7 @@ fig2 = px.line(
     autosize=False,
     width=500,
     height=height,
-    title=f'{corp} Scores for 2022',
+    title=f'{corp} Scores for 2023',
     font=dict(
         size=20
     )
