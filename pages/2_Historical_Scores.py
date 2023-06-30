@@ -10,7 +10,8 @@ st.set_page_config(page_title="Historical Scores", layout="wide")
 
 score_df1 = pd.read_csv('pages/2013-to-2019-World-Class-DCI-scores.csv')
 score_df2 = pd.read_csv('pages/2022-World-Class-DCI-scores.csv')
-score_df = pd.concat([score_df1, score_df2])
+score_df3 = pd.read_csv('pages/2023-World-Class-DCI-scores.csv')
+score_df = pd.concat([score_df1, score_df2, score_df3])
 score_df['Date'] = pd.to_datetime(score_df.Date)
 score_df['Year'] = score_df.Date.dt.year
 score_df = score_df.sort_values(by=['Corps', 'Year']).reset_index(drop=True)

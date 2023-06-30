@@ -8,7 +8,7 @@ color_discrete_map = dict(dci_colors.values)
 
 st.set_page_config(page_title="Caption Analysis", layout="wide")
 
-df = pd.read_csv('pages/2022-DCI-Caption-Score-Recaps.csv')
+df = pd.read_csv('pages/2023-DCI-Caption-Score-Recaps.csv')
 larger_df = pd.read_csv('pages/2022-DCI-Caption-Score-Recaps-Large.csv')
 
 df['date'] = pd.to_datetime(df.date)
