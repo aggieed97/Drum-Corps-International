@@ -128,7 +128,7 @@ def get_line_chart(caption_picked):
         )
     ).add_annotation(dict(font=dict(size=15),
                           x=0.85,
-                          y=-0.20,
+                          y=-0.30,
                           showarrow=False,
                           text="Data: https://dci.org<br>Graphic: @Danger009Mouse",
                           textangle=0,
