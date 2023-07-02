@@ -31,7 +31,7 @@ captions_list = ['General Effect Total', 'Visual Proficiency', 'Visual Analysis'
 def ge_scores_by_drum_corps(corp):
     #larger_ge_df = larger_df[larger_df.drum_corps.isin(corp)].reset_index(drop=True)
     #larger_ge_df = larger_ge_df[['date', 'location', 'drum_corps', 'general_effect1_judge', 'general_effect2_judge',
-                                 'general_effect_total_score']]
+    #                             'general_effect_total_score']]
 
     ge_df = df[df.drum_corps.isin(corp)].reset_index(drop=True)
     ge_df = ge_df[
