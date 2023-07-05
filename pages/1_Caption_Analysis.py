@@ -120,7 +120,7 @@ def get_line_chart(caption_picked):
         autosize=False,
         width=500,
         height=500,
-        title=f'{caption} Scores for 2022',
+        title=f'{caption} Scores for 2023',
         xaxis_title='Date',
         yaxis_title=f'{caption} Score',
         font=dict(
