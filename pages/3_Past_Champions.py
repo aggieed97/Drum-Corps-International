@@ -23,7 +23,7 @@ fig1 = px.histogram(
     color_discrete_map=color_discrete_map,
 ).update_layout(
     title={
-        'text': 'Drum Corps International <br>World Class Championship Titles 1972-2022*',
+        'text': 'Drum Corps International <br>World Class Championship Titles 1972-2023*',
         'y': 0.97,
         'x': 0.5,
         'xanchor': 'center',
