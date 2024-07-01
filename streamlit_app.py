@@ -51,7 +51,7 @@ corps.insert(0, "All")
 col1, col2, col3 = st.columns([5, 3, 0.2])
 
 col1.markdown('<a id="analysis"></a>', unsafe_allow_html=True)
-col1.markdown("## 2023 Analysis")
+col1.markdown("## 2024 Analysis")
 
 corp = st.selectbox('Choose a Drum Corps:', corps)
 
@@ -79,7 +79,7 @@ fig2 = px.line(
     autosize=False,
     width=500,
     height=height,
-    title=f'{corp} Scores for 2023',
+    title=f'{corp} Scores for 2024',
     font=dict(
         size=20
     )

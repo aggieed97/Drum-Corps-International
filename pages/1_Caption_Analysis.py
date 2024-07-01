@@ -38,8 +38,8 @@ def ge_scores_by_drum_corps(corp):
         ['date', 'location', 'drum_corps', 'general_effect1_judge', 'general_effect2_judge',
          'general_effect_total_score']]
 
-    f#inal_df = pd.concat([ge_df, larger_ge_df]).sort_values(by='date')
-    f#inal_df = pd.concat([ge_df, larger_ge_df]).sort_values(by=['drum_corps', 'date'])
+    #final_df = pd.concat([ge_df, larger_ge_df]).sort_values(by='date')
+    #final_df = pd.concat([ge_df, larger_ge_df]).sort_values(by=['drum_corps', 'date'])
     #final_df = final_df[(final_df != 0).all(1)].reset_index(drop=True)
 
     #return final_df
@@ -120,7 +120,7 @@ def get_line_chart(caption_picked):
         autosize=False,
         width=500,
         height=500,
-        title=f'{caption} Scores for 2023',
+        title=f'{caption} Scores for 2024',
         xaxis_title='Date',
         yaxis_title=f'{caption} Score',
         font=dict(
