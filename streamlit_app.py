@@ -35,7 +35,7 @@ dci_prelims = Image.open('images/prelims_predictions.png')
 dci_semis = Image.open('images/semis_predictions.png')
 dci_finals = Image.open('images/finals_predictions.png')
 
-df = pd.read_csv('pages/2023-World-Class-DCI-scores.csv')
+df = pd.read_csv('pages/2024-World-Class-DCI-scores.csv')
 dci_colors = pd.read_csv('pages/drum_corps_colors.csv')
 color_discrete_map = dict(dci_colors.values)
 
