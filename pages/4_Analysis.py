@@ -78,7 +78,7 @@ score_change_mean_dict = {'Blue Devils': 1.12,
 score_change_df = pd.DataFrame.from_dict(score_change_mean_dict, orient='index',
                 columns = ['Average Score Change']).reset_index().rename(columns={'index':'Drum Corps'})
 
-final_score_change_df = score_change_df.style.set_caption('Average Score Change by Corps (2017-2020)').hide_index() \
+final_score_change_df = score_change_df.style.set_caption('Average Score Change by Corps (2017-2020)').hide(axis='index') \
     .format({'Average Score Change':'{:.3}'}) \
     .set_table_styles([dict(selector='th', props=[('text-align', 'center')])]) \
     .set_table_styles([{'selector': 'th.col_heading', 'props': 'text-align: center;'}], overwrite=False)

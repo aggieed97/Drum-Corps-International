@@ -81,7 +81,7 @@ def highlight_cols(s, coldict):
     return ['background-color: {}'.format(color_discrete_map[v]) if v else '' for v in
             champions['Drum Corps'].isin(color_discrete_map.keys()) * champions['Drum Corps'].values]
 
-champion_df = champions.style.set_caption(caption_text).hide_index() \
+champion_df = champions.style.set_caption(caption_text).hide(axis=index) \
     .apply(highlight_cols, coldict=color_discrete_map) \
     .format({'Score':'{:.5}'}) \
     .set_table_styles([dict(selector='th', props=[('text-align', 'center')])]) \
