@@ -39,7 +39,7 @@ df = pd.read_csv('pages/2024-World-Class-DCI-scores.csv')
 dci_colors = pd.read_csv('pages/drum_corps_colors.csv')
 color_discrete_map = dict(dci_colors.values)
 
-first_place_finishes = df.query("Rank == '1st'").Corps.value_counts().reset_index()#.rename(columns={"index":"Drum Corps", "Corps":"1st Place Finish"})
+first_place_finishes = df.query("Rank == '1st'").Corps.value_counts().reset_index().rename(columns={"Corps":"Drum Corps", "count":"1st Place Finish"})
 st.write(first_place_finishes)
 
 df['Date'] = pd.to_datetime(df.Date)
