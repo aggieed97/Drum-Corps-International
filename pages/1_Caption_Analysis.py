@@ -128,11 +128,11 @@ def get_line_chart(caption_picked):
         font=dict(
             size=20
         )
-    ).add_annotation(dict(font=dict(size=15),
+    ).add_annotation(dict(font=dict(size=14),
                           x=0.85,
-                          y=-0.25,
+                          y=-0.20,
                           showarrow=False,
-                          text="Data: https://dci.org & CorpsClash<br>Graphic: @DangerMouse",
+                          text="Data: DCI.org & CorpsClash<br>Graphic: @DangerMouse",
                           textangle=0,
                           xanchor='left',
                           xref="paper",
@@ -164,6 +164,7 @@ if caption == 'General Effect Total':
 
     fig2 = get_line_chart(caption_picked='general_effect_total_score')
     st.plotly_chart(fig2, use_container_width=True)
+    st.text("\n")
     st.table(filtered_df)
 
 elif 'Visual' in caption:
@@ -182,6 +183,7 @@ elif 'Visual' in caption:
     fig2 = get_line_chart(caption_picked=y)
 
     st.plotly_chart(fig2, use_container_width=True)
+    st.text("\n")
     st.table(filtered_df)
 
 elif 'Music' in caption:
@@ -199,8 +201,8 @@ elif 'Music' in caption:
 
     fig2 = get_line_chart(caption_picked=y)
 
-
     st.plotly_chart(fig2, use_container_width=True)
+    st.text("\n")
     st.table(filtered_df)
 
 elif caption == 'Total':
@@ -209,5 +211,6 @@ elif caption == 'Total':
 
     fig2 = get_line_chart(caption_picked='total_score')
     st.plotly_chart(fig2, use_container_width=True)
+    st.text("\n")
     st.table(filtered_df)
 
