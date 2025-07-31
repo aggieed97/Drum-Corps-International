@@ -10,7 +10,7 @@ st.title("Drum Corps International")
 st.markdown(
     """
     Welcome to my Drum Corps International (DCI) Analysis page.  Here you will find information on \
-    DCI Score Predictions, Historical Scores (2013-2019), as well as Different Types of Analyses.
+    DCI Score Predictions, Historical Scores (2013-2025), as well as Different Types of Analyses.
     
     Feel free to browse the site and let me know what you think.  Let us enjoy the 2022 Season Together!
     
@@ -35,7 +35,7 @@ dci_prelims = Image.open('images/prelims_predictions.png')
 dci_semis = Image.open('images/semis_predictions.png')
 dci_finals = Image.open('images/finals_predictions.png')
 
-df = pd.read_csv('pages/2024-World-Class-DCI-scores.csv')
+df = pd.read_csv('pages/2025-World-Class-DCI-scores.csv')
 dci_colors = pd.read_csv('pages/drum_corps_colors.csv')
 color_discrete_map = dict(dci_colors.values)
 
@@ -51,7 +51,7 @@ corps.insert(0, "All")
 col1, col2, col3 = st.columns([5, 3, 0.2])
 
 col1.markdown('<a id="analysis"></a>', unsafe_allow_html=True)
-col1.markdown("## 2024 Analysis")
+col1.markdown("## 2025 Analysis")
 
 corp = st.selectbox('Choose a Drum Corps:', corps)
 
@@ -73,13 +73,13 @@ fig2 = px.line(
     color='Corps',
     color_discrete_map=color_discrete_map,
     markers=True,
-    hover_name='Location',
+    hover_name='Event',
     template='seaborn'
 ).update_layout(
     autosize=False,
     width=500,
     height=height,
-    title=f'{corp} Scores for 2024',
+    title=f'{corp} Scores for 2025',
     font=dict(
         size=20
     )
@@ -87,7 +87,7 @@ fig2 = px.line(
                       x=annotation_xtext,
                       y=annotation_ytext,
                       showarrow=False,
-                      text="Data: https://dci.org<br>Graphic: @Danger009Mouse",
+                      text="Data: https://dci.org<br>Graphic: @DangerMouse",
                       textangle=0,
                       xanchor='left',
                       xref="paper",
