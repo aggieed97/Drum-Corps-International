@@ -1,4 +1,5 @@
 Year,Corps,Date,Event,Rank,Score
+2025,Blue Devils,08/07/2025,"Indianapolis, IN",4th,95.588
 2025,Blue Devils,08/04/2025,"Canton, OH",3rd,95.575
 2025,Blue Devils,08/01/2025,"Allentown, PA",2nd,94.650
 2025,Blue Devils,07/29/2025,"Newark, DE",1st,93.950
@@ -12,6 +13,7 @@ Year,Corps,Date,Event,Rank,Score
 2025,Blue Devils,07/11/2025,"Walnut, CA",2nd,84.300
 2025,Blue Devils,07/06/2025,"Stanford, CA",2nd,81.800
 2025,Blue Devils,06/28/2025,"Fort Collins, CO",2nd,75.400
+2025,Blue Knights,08/07/2025,"Indianapolis, IN",12th,87.600
 2025,Blue Knights,08/04/2025,"Canton, OH",8th,87.500
 2025,Blue Knights,08/01/2025,"Allentown, PA",6th,87.225
 2025,Blue Knights,07/30/2025,"Glassboro, NJ",2nd,87.250
@@ -35,6 +37,7 @@ Year,Corps,Date,Event,Rank,Score
 2025,Blue Knights,07/02/2025,"Seattle, WA",3rd,67.850
 2025,Blue Knights,06/30/2025,"Ogden, UT",2nd,67.850
 2025,Blue Knights,06/28/2025,"Fort Collins, CO",5th,65.950
+2025,Blue Stars,08/07/2025,"Indianapolis, IN",9th,90.488
 2025,Blue Stars,08/04/2025,"Pittsburgh, PA",2nd,91.250
 2025,Blue Stars,08/02/2025,"Williamsport, PA",3rd,89.150
 2025,Blue Stars,08/01/2025,"Allentown, PA",4th,88.900
@@ -51,6 +54,7 @@ Year,Corps,Date,Event,Rank,Score
 2025,Blue Stars,07/06/2025,"La Crosse, WI",2nd,75.200
 2025,Blue Stars,07/03/2025,"Rockford, IL",2nd,73.000
 2025,Blue Stars,07/02/2025,"Cedarburg, WI",2nd,70.800
+2025,Bluecoats,08/07/2025,"Indianapolis, IN",2nd,97.150
 2025,Bluecoats,08/04/2025,"Canton, OH",1st,97.075
 2025,Bluecoats,08/01/2025,"Allentown, PA",1st,96.475
 2025,Bluecoats,07/30/2025,"Glassboro, NJ",1st,95.850
@@ -65,6 +69,7 @@ Year,Corps,Date,Event,Rank,Score
 2025,Bluecoats,07/15/2025,"Broken Arrow, OK",1st,88.550
 2025,Bluecoats,07/12/2025,"Lisle, IL",1st,86.500
 2025,Bluecoats,07/06/2025,"La Crosse, WI",1st,83.300
+2025,Boston Crusaders,08/07/2025,"Indianapolis, IN",1st,97.325
 2025,Boston Crusaders,08/04/2025,"Canton, OH",2nd,96.500
 2025,Boston Crusaders,08/03/2025,"Downingtown, PA",1st,96.875
 2025,Boston Crusaders,08/02/2025,"Allentown, PA",1st,96.375
@@ -84,6 +89,7 @@ Year,Corps,Date,Event,Rank,Score
 2025,Boston Crusaders,07/05/2025,"Sacramento, CA",1st,80.800
 2025,Boston Crusaders,06/30/2025,"Ogden, UT",1st,77.850
 2025,Boston Crusaders,06/28/2025,"Fort Collins, CO",1st,76.200
+2025,Carolina Crown,08/07/2025,"Indianapolis, IN",5th,94.638
 2025,Carolina Crown,08/04/2025,"Canton, OH",4th,93.700
 2025,Carolina Crown,08/03/2025,"Downingtown, PA",2nd,94.500
 2025,Carolina Crown,08/02/2025,"Allentown, PA",3rd,93.450
@@ -100,6 +106,7 @@ Year,Corps,Date,Event,Rank,Score
 2025,Carolina Crown,07/12/2025,"Little Rock, AR",2nd,84.300
 2025,Carolina Crown,07/07/2025,"Sevierville, TN",1st,81.500
 2025,Carolina Crown,07/05/2025,"Lexington, SC",1st,79.850
+2025,Colts,08/07/2025,"Indianapolis, IN",11th,88.038
 2025,Colts,08/04/2025,"Canton, OH",7th,88.025
 2025,Colts,08/03/2025,"Downingtown, PA",3rd,87.900
 2025,Colts,08/01/2025,"Allentown, PA",7th,86.700
@@ -118,6 +125,7 @@ Year,Corps,Date,Event,Rank,Score
 2025,Colts,07/06/2025,"La Crosse, WI",3rd,74.150
 2025,Colts,07/02/2025,"Cedarburg, WI",3rd,70.100
 2025,Colts,06/28/2025,"Fort Collins, CO",3rd,68.250
+2025,Crossmen,08/07/2025,"Indianapolis, IN",18th,82.500
 2025,Crossmen,08/04/2025,"Edinboro, PA",6th,82.475
 2025,Crossmen,08/02/2025,"Allentown, PA",9th,81.325
 2025,Crossmen,07/29/2025,"Myrtle Beach, SC",4th,80.600
@@ -134,6 +142,7 @@ Year,Corps,Date,Event,Rank,Score
 2025,Crossmen,07/08/2025,"Mankato, MN",5th,70.300
 2025,Crossmen,07/06/2025,"La Crosse, WI",6th,69.400
 2025,Crossmen,07/03/2025,"Rockford, IL",6th,66.250
+2025,Genesis,08/07/2025,"Indianapolis, IN",22nd,78.075
 2025,Genesis,08/04/2025,"Pittsburgh, PA",3rd,79.800
 2025,Genesis,08/02/2025,"Allentown, PA",10th,77.450
 2025,Genesis,07/30/2025,"Glassboro, NJ",5th,78.750
@@ -149,6 +158,7 @@ Year,Corps,Date,Event,Rank,Score
 2025,Genesis,07/12/2025,"Little Rock, AR",6th,70.350
 2025,Genesis,07/08/2025,"Newnan, GA",4th,69.750
 2025,Genesis,07/07/2025,"Sevierville, TN",5th,68.100
+2025,Madison Scouts,08/07/2025,"Indianapolis, IN",14th,85.550
 2025,Madison Scouts,08/04/2025,"Canton, OH",10th,84.550
 2025,Madison Scouts,08/02/2025,"Allentown, PA",7th,84.638
 2025,Madison Scouts,07/30/2025,"Glassboro, NJ",4th,84.600
@@ -167,6 +177,7 @@ Year,Corps,Date,Event,Rank,Score
 2025,Madison Scouts,07/06/2025,"La Crosse, WI",5th,72.050
 2025,Madison Scouts,07/03/2025,"Rockford, IL",5th,68.750
 2025,Madison Scouts,07/02/2025,"Cedarburg, WI",6th,66.750
+2025,Mandarins,08/07/2025,"Indianapolis, IN",7th,92.450
 2025,Mandarins,08/04/2025,"Edinboro, PA",1st,92.725
 2025,Mandarins,08/02/2025,"Allentown, PA",4th,91.800
 2025,Mandarins,07/30/2025,"Huntington, WV",2nd,91.250
@@ -187,6 +198,7 @@ Year,Corps,Date,Event,Rank,Score
 2025,Mandarins,07/05/2025,"Sacramento, CA",3rd,76.200
 2025,Mandarins,07/03/2025,"Portland, OR",2nd,74.800
 2025,Mandarins,07/02/2025,"Seattle, WA",2nd,73.150
+2025,Music City,08/07/2025,"Indianapolis, IN",16th,83.050
 2025,Music City,08/04/2025,"Edinboro, PA",4th,83.150
 2025,Music City,08/02/2025,"Williamsport, PA",4th,81.850
 2025,Music City,08/01/2025,"Allentown, PA",9th,81.300
@@ -203,6 +215,7 @@ Year,Corps,Date,Event,Rank,Score
 2025,Music City,07/08/2025,"Newnan, GA",3rd,73.350
 2025,Music City,07/07/2025,"Sevierville, TN",4th,72.150
 2025,Music City,07/05/2025,"Lexington, SC",3rd,70.750
+2025,Pacific Crest,08/07/2025,"Indianapolis, IN",15th,83.863
 2025,Pacific Crest,08/04/2025,"Canton, OH",9th,84.700
 2025,Pacific Crest,08/01/2025,"Allentown, PA",8th,83.850
 2025,Pacific Crest,07/30/2025,"Huntington, WV",4th,82.600
@@ -222,6 +235,7 @@ Year,Corps,Date,Event,Rank,Score
 2025,Pacific Crest,07/12/2025,"Pasadena, CA",6th,74.550
 2025,Pacific Crest,07/11/2025,"Walnut, CA",6th,73.700
 2025,Pacific Crest,07/09/2025,"Santa Clarita, CA",5th,72.500
+2025,Phantom Regiment,08/07/2025,"Indianapolis, IN",6th,93.650
 2025,Phantom Regiment,08/04/2025,"Canton, OH",5th,93.625
 2025,Phantom Regiment,08/02/2025,"Williamsport, PA",1st,93.800
 2025,Phantom Regiment,08/01/2025,"Allentown, PA",3rd,93.225
@@ -238,6 +252,7 @@ Year,Corps,Date,Event,Rank,Score
 2025,Phantom Regiment,07/07/2025,"Sevierville, TN",2nd,80.950
 2025,Phantom Regiment,07/03/2025,"Rockford, IL",1st,76.150
 2025,Phantom Regiment,07/02/2025,"Cedarburg, WI",1st,74.900
+2025,Santa Clara Vanguard,08/07/2025,"Indianapolis, IN",3rd,95.875
 2025,Santa Clara Vanguard,08/04/2025,"Pittsburgh, PA",1st,95.850
 2025,Santa Clara Vanguard,08/02/2025,"Allentown, PA",2nd,95.400
 2025,Santa Clara Vanguard,07/30/2025,"Huntington, WV",1st,94.450
@@ -256,6 +271,7 @@ Year,Corps,Date,Event,Rank,Score
 2025,Santa Clara Vanguard,07/05/2025,"Sacramento, CA",2nd,79.150
 2025,Santa Clara Vanguard,07/03/2025,"Portland, OR",1st,77.950
 2025,Santa Clara Vanguard,07/02/2025,"Seattle, WA",1st,76.550
+2025,Seattle Cascades,08/07/2025,"Indianapolis, IN",23rd,77.500
 2025,Seattle Cascades,08/04/2025,"Pittsburgh, PA",4th,78.900
 2025,Seattle Cascades,08/01/2025,"Allentown, PA",11th,76.400
 2025,Seattle Cascades,07/29/2025,"Myrtle Beach, SC",6th,75.100
@@ -278,6 +294,7 @@ Year,Corps,Date,Event,Rank,Score
 2025,Seattle Cascades,07/03/2025,"Portland, OR",4th,63.200
 2025,Seattle Cascades,07/02/2025,"Seattle, WA",4th,62.300
 2025,Seattle Cascades,06/30/2025,"Ogden, UT",3rd,62.650
+2025,Spirit of Atlanta,08/07/2025,"Indianapolis, IN",13th,86.625
 2025,Spirit of Atlanta,08/04/2025,"Edinboro, PA",3rd,86.425
 2025,Spirit of Atlanta,08/02/2025,"Allentown, PA",6th,84.775
 2025,Spirit of Atlanta,07/29/2025,"Myrtle Beach, SC",2nd,84.400
@@ -293,6 +310,7 @@ Year,Corps,Date,Event,Rank,Score
 2025,Spirit of Atlanta,07/08/2025,"Newnan, GA",2nd,73.800
 2025,Spirit of Atlanta,07/07/2025,"Sevierville, TN",3rd,73.700
 2025,Spirit of Atlanta,07/05/2025,"Lexington, SC",2nd,71.650
+2025,The Academy,08/07/2025,"Indianapolis, IN",17th,82.550
 2025,The Academy,08/04/2025,"Edinboro, PA",5th,82.600
 2025,The Academy,08/02/2025,"Allentown, PA",8th,81.475
 2025,The Academy,07/29/2025,"Myrtle Beach, SC",5th,80.150
@@ -310,6 +328,7 @@ Year,Corps,Date,Event,Rank,Score
 2025,The Academy,07/09/2025,"Santa Clarita, CA",6th,71.200
 2025,The Academy,07/06/2025,"Stanford, CA",6th,69.450
 2025,The Academy,07/05/2025,"Sacramento, CA",5th,68.600
+2025,The Cavaliers,08/07/2025,"Indianapolis, IN",8th,91.163
 2025,The Cavaliers,08/04/2025,"Edinboro, PA",2nd,90.900
 2025,The Cavaliers,08/02/2025,"Allentown, PA",5th,89.750
 2025,The Cavaliers,07/30/2025,"Huntington, WV",3rd,88.950
@@ -327,6 +346,7 @@ Year,Corps,Date,Event,Rank,Score
 2025,The Cavaliers,07/08/2025,"Mankato, MN",1st,77.100
 2025,The Cavaliers,07/03/2025,"Rockford, IL",3rd,71.600
 2025,The Cavaliers,07/02/2025,"Cedarburg, WI",4th,69.450
+2025,Troopers,08/07/2025,"Indianapolis, IN",10th,90.325
 2025,Troopers,08/04/2025,"Canton, OH",6th,88.125
 2025,Troopers,08/02/2025,"Williamsport, PA",2nd,89.200
 2025,Troopers,08/01/2025,"Allentown, PA",5th,88.625
